@@ -1,0 +1,11 @@
+﻿@page "/Authen"
+<EditForm Model="authenticationRequest" OnSubmit="OnSubmit">
+    <label>Username</label><br />
+    <InputText @bind-Value="authenticationRequest.UserName"></InputText><br />
+     <label>Password</label><br />
+     <InputText @bind-Value="authenticationRequest.Password"></InputText><br />
+     <button type="submit">Đăng nhập</button>
+</EditForm>
+@code {
+
+}
